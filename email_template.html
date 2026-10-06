@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>OEM Vulnerability Alert</title>
+</head>
+
+<body>
+    <h2>OEM Vulnerability Alert</h2>
+
+    <p><strong>Severity:</strong> {{ severity }}</p>
+    <p><strong>Vulnerability ID:</strong> {{ unique_id }}</p>
+    <p><strong>Name:</strong> {{ name }}</p>
+    <p><strong>Version:</strong> {{ version }}</p>
+    <p><strong>OEM:</strong> {{ oem }}</p>
+
+    <p><strong>Description:</strong><br>
+    {{ description }}</p>
+
+    <p><strong>Mitigation:</strong><br>
+    {{ mitigation }}</p>
+
+    <p><strong>Published Date:</strong> {{ published_date }}</p>
+
+    <p><strong>Patch URL:</strong>
+    <a href="{{ patch_url }}">{{ patch_url }}</a></p>
+
+    <p><strong>Source:</strong>
+    <a href="{{ source_url }}">{{ source_url }}</a></p>
+
+    <hr>
+
+    <p>This is an automated security vulnerability alert.</p>
+</body>
+</html>

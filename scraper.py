@@ -7,6 +7,7 @@ def poll_oem_portal():
     print("[POLL] Checking OEM security portal for new advisories...")
     record = {"name": "Chrome", "severity": "High", "unique_id": "CVE-2023-47131"}
     print(f"[SUCCESS] Fetched live record: {record}")
+    return record 
 
 def start_scheduler():
     print("Starting Member 1 Automated Polling Engine (Press Ctrl+C to stop)...")
